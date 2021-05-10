@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cf983e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StartController">
+   <children>
+      <Text fill="#55575c" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Word Quizzle" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font name="Purisa" size="40.0" />
+         </font>
+         <effect>
+            <Reflection fraction="1.0" topOpacity="0.65" />
+         </effect>
+      </Text>
+      <Button fx:id="start" contentDisplay="CENTER" layoutX="242.0" layoutY="279.0" mnemonicParsing="false" onAction="#startButton" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: #f5e8cf;" text="START" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cf983e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterController">
+    <children>
+        <Text fill="#55575c" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Word Quizzle" textAlignment="CENTER" wrappingWidth="600.0">
+            <font>
+                <Font name="Purisa" size="40.0" />
+            </font>
+            <effect>
+                <Reflection fraction="1.0" topOpacity="0.65" />
+            </effect>
+        </Text>
+        <TextField fx:id="usrnf" layoutX="215.0" layoutY="207.0" promptText="username" />
+        <PasswordField fx:id="pswf" layoutX="215.0" layoutY="246.0" promptText="password" />
+        <Button fx:id="regbtn" layoutX="249.0" layoutY="294.0" mnemonicParsing="false" onAction="#regButton" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: #f5e8cf;" text="SIGN IN" />
+        <Label fx:id="errorlbl" layoutX="215.0" layoutY="176.0" textFill="#f20a0a" />
+        <Label fx:id="backlbl" contentDisplay="CENTER" layoutX="256.0" layoutY="338.0" onMouseClicked="#backLabel" text="Back to Login" underline="true" />
+    </children>
+</AnchorPane>

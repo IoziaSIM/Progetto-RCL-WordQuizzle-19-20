@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cf983e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <children>
+        <Text fill="#55575c" layoutX="181.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WORD QUIZZLE">
+            <font>
+                <Font name="Purisa" size="27.0" />
+            </font></Text>
+        <TextField fx:id="username" layoutX="25.0" layoutY="64.0" prefHeight="26.0" prefWidth="159.0" />
+        <Button fx:id="scorebtn" layoutX="73.0" layoutY="109.0" mnemonicParsing="false" onAction="#scoreButton" style="-fx-background-color: #f5e8cf;" text="SCORE" />
+        <Button fx:id="friendbtn" layoutX="56.0" layoutY="187.0" mnemonicParsing="false" onAction="#listButton" style="-fx-background-color: #f5e8cf;" text="MY FRIENDS" />
+        <Button fx:id="rankbtn" layoutX="66.0" layoutY="231.0" mnemonicParsing="false" onAction="#rankButton" style="-fx-background-color: #f5e8cf;" text="RANKING" />
+        <TextField fx:id="friendname" layoutX="26.0" layoutY="310.0" prefHeight="26.0" prefWidth="159.0" promptText="add/remove a friend" />
+        <Button fx:id="logoutbtn" layoutX="502.0" layoutY="360.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #f5e8cf;" text="LOGOUT" />
+        <TextField fx:id="challenge" layoutX="407.0" layoutY="271.0" promptText="challenge a friend" />
+        <Button fx:id="addbtn" layoutX="81.0" layoutY="349.0" mnemonicParsing="false" onAction="#addButton" style="-fx-background-color: #f5e8cf;" text="ADD" />
+        <Button fx:id="challbtn" layoutX="444.0" layoutY="310.0" mnemonicParsing="false" onAction="#challengeButton" style="-fx-background-color: #f5e8cf;" text="CHALLENGE" />
+        <Button fx:id="acceptbtn" layoutX="405.0" layoutY="213.0" mnemonicParsing="false" onAction="#acceptButton" style="-fx-background-color: #f5e8cf;" text="ACCEPT" />
+        <Button fx:id="declinebtn" layoutX="493.0" layoutY="213.0" mnemonicParsing="false" onAction="#declineButton" style="-fx-background-color: #f5e8cf;" text="DECLINE" />
+        <Label fx:id="scorelbl" layoutX="66.0" layoutY="152.0" text="Points: 0" textAlignment="CENTER">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <TitledPane animated="false" collapsible="false" layoutX="386.0" layoutY="64.0" prefHeight="133.0" prefWidth="202.0" text="Notifications">
+            <content>
+                <AnchorPane fx:id="notifyPane" minHeight="0.0" minWidth="0.0" prefHeight="79.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="37.0" layoutY="61.0" text="invited you to play!">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="notifylbl" layoutX="67.0" layoutY="23.0" text="username">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane animated="false" collapsible="false" layoutX="202.0" layoutY="64.0" prefHeight="298.0" prefWidth="177.0" text="List Table">
+            <content>
+                <AnchorPane fx:id="listPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ListView fx:id="friendList" layoutX="-1.0" prefHeight="272.0" prefWidth="177.0" />
+                    </children></AnchorPane>
+            </content>
+        </TitledPane>
+        <Label fx:id="frienderror" layoutX="25.0" layoutY="284.0" text="error" textFill="#f20a0a" />
+        <Label fx:id="challerror" layoutX="407.0" layoutY="249.0" text="error2" textFill="#f20a0a" />
+        <Label fx:id="logouterror" layoutX="270.0" layoutY="378.0" text="error3" textFill="#f20a0a" />
+    </children>
+</AnchorPane>
